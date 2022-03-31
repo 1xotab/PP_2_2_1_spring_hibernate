@@ -13,13 +13,13 @@ public class Car {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long carID;
+    private Long id;
 
     @Column
-    String model;
+    private String model;
 
     @Column
-    int series;
+    private int series;
 
     public Car(String model, int series) {
         this.model = model;
